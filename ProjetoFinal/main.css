@@ -1,0 +1,211 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 500px;
+  background: #00CED1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+/*Quadro preto do lado esquerdo*/
+.navmenu{
+  float: left;
+  width: 20%;
+  height: 654px;
+  background: #000000;
+  padding: 100px;
+  border: none !important;
+}
+
+.navmenu2{
+  float: left;
+  width: 10%;
+  height: 1100px;
+  background: #000000;
+  padding: 50px;
+  border: none !important;
+}
+
+.navmenu4{
+  float: left;
+  width: 10%;
+  height: 1150px;
+  background: #000000;
+  padding: 50px;
+  border: none !important;
+}
+
+/*Tamanho e cor do ícone*/
+.glyphicon {
+  font-size: 2em;
+  color: white;
+}
+
+.fixed {
+  /* o fixed é útil pra deixar um ícone fixo enquanto utiliza a barra de rolagem. Bem útil. */
+  position: fixed;
+}
+
+/*Quadro azul do lado direito*/
+/*Provavelmente teremos que criar um pra cada página pra mudar as cores*/
+.articlePagina1{
+  float: left;
+  padding: 170px;
+  width: 90%;
+  background-color: #00CED1;
+  height: 654px;
+  border: none !important;
+}
+
+.articlePagina2{
+  float: left;
+  padding: 90px;
+  width: 90%;
+  background-color: #DA70D6;
+  height: 1100px;
+  border: none !important;
+}
+
+.articlePagina3{
+  float: left;
+  padding: 170px;
+  width: 90%;
+  background-color: #00FA9A;
+  height: 654px;
+  border: none !important;
+}
+
+.articlePagina4{
+  float: left;
+  padding: 90px;
+  width: 90%;
+  background-color: #FFD700;
+  height: 1150px;
+  border: none !important;
+}
+
+.articlePagina5{
+  float: left;
+  padding: 170px;
+  width: 90%;
+  background-color: #FA8072;
+  height: 654px;
+  border: none !important;
+}
+
+
+/*Possíveis formatações para botões, inputs, textareas, etc*/
+textarea{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], select{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 90%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+
+}
+
+input[type=reset]{
+    width: 90%;
+    background-color: #FFA500;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+
+}
+
+button{
+  width: 90%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+}
+
+/*para tabelas. Possivelmente serão modificadas as formas de print até lá*/
+table{
+  border-collapse: collapse;
+}
+th, td{
+  padding: 10px; /*para auemntar o espaçamento entre os elementos da tabela*/
+}
+thead tr {
+  border-bottom: solid 3px #444;
+}
+tbody tr:hover{
+  background-color: #dedede; /*aplicar cor cinza ao passar sobre a linha da tabela.*/
+}
+
+.error {
+  color: #FF0000;
+}
+

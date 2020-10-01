@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  grid-area: cabecalho;
+  background-color: #1867c0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  z-index: 1;
+  box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+fieldset{
+    width: 90%;
+    background-color: #1867c0;
+    /*#5867c0;*/
+}
+
+
+a{
+  background-color: #1867c0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  z-index: 1;
+  box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+}
+
+table{
+  border-collapse: collapse;
+}
+th, td{
+  padding: 10px; /*para auemntar o espaçamento entre os elementos da tabela*/
+}
+thead tr {
+  border-bottom: solid 3px #444;
+}
+tbody tr:hover{
+  background-color: #dedede; /*aplicar cor cinza ao passar sobre a linha da tabela.*/
+}
+
+textarea{
+    width: 80%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=text], select{
+    width: 80%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=password], select{
+    width: 80%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+input[type=submit]{
+    width: 90%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+
+}
+
+input[type=reset]{
+    width: 90%;
+    background-color: #DD0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+
+}
+
+button{
+  width: 90%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+}
