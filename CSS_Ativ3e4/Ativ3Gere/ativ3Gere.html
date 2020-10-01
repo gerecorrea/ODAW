@@ -1,0 +1,79 @@
+<meta charset="utf-8">
+<html>
+    <head>
+        <title> Sistema de Cadastramento IMDb</title>
+    </head>
+
+    <style>
+        input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }    
+        input[type=submit]{
+            width: 100%;
+            background-color: #B27F00;
+            color: black;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+        }
+        section{
+            border-radius: 5px;
+            background-color: #b27a00;
+            padding: 20px;
+        }    
+        h3{
+            text-align: center;
+        }
+        </style>
+
+        <!--<body background = "spmUM.gif">-->
+        <body background = "bg.jpg">
+            <font color='B27A00'> <h3>Sistema de Cadastramento IMDb</h3> 
+            <!-- bgcolor = "090807""..."  -->
+                <br></br>
+                <fieldset>
+                <section> <center><font color = 'Black'>CADASTRO </font></center></section>
+                    <br></br>
+                    <form>
+                        <label for="E-mail">Nome</label>
+                        <input type="email" color="red" id="e-mail" placeholder="Seu e-mail..." required>
+                        <br></br>
+                        <label for="Senha">Senha</label>
+                        <input type="password" color="red" id="password" placeholder="Sua senha..." required>
+                        <br></br>
+                        <p> Selecione sua data de nascimento </p>
+                        <input type="date" value="Data de nascimento" name="Aniversário">
+                        <br></br>
+                        <!--<form>
+                            <p>Estime quantos filmes você já viu (únicos)</p>
+                            <input id="filmes" type="range" min="0" max="5000" value = "100" placeholder = "Quantidade de filmes (opcional)..." onchange="mostrarIdade(this.value)"/>
+                        </form>-->
+                        <label for="Filme preferido">Filme Preferido</label>
+                        <input type="text" color="red" id="filme" placeholder="Seu filme preferido (opcional)..." >
+                        <br></br>
+                        <p>Ouça o que o Chewbacca tem para falar antes de você dar submit</p>
+                        <audio src="Chewbacca.mp3" controls="true" autoplay="true"></audio>
+                        <br></br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+                </fieldset>
+                <nav>
+                    <br></br>
+                    <a href="https://www.w3schools.com/html/">Clique aqui para saber mais sobre HTML</a>
+                    <br></br>
+                    <a href="https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F">Clique aqui para 
+                        fazer o cadastro pelo verdadeiro site do IMDb</a>
+                    <!--https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F-->
+                    <bold><h6>Página criada por Geremias Corrêa</h6></bold>
+                </nav>
+
+
+            </font>
+        </body>
+    </html>

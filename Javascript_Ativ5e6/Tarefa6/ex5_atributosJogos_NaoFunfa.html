@@ -1,0 +1,54 @@
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<!-- Ex5 exercício livre. - Tarefa 6 -->
+    
+<script type="text/javascript">
+    setarAtributos = (forc, des, vit, def, sor) => {
+        //atrib:
+        //atq, velocidade de atq, vida, defesa, chacne de esquiva, chance de crítico.
+        document.write("Estou aqui");
+        let forca = parseInt(forc);
+        let destreza = parseInt(des);
+        let vitalidade = parseInt(vit);
+        let defesa = parseInt(def);
+        let sorte = parseInt(sor);
+
+        let ataque = (forca * 3) + (destreza * 1) + (vitalidade * 0.5);
+        let velAtq = 0.5 + ((destreza * 0.7) + (sorte *0.2) + (vitalidade * 0.1)) *4.5; //varia entre 0 a 5 ataques por segundo
+        let vida = vitalidade * 10 + forca * 2;
+        let defesa = defesa * 5 + vitalidade * 1 * sorte * 1;
+        let chanceEsquiva = (sorte * 0.7 + defesa * 0.3)*100; //varia entre 0 a 100%
+        let chanceCritico = (sorte * 0.6 + destreza*0.4)*100; //varia entre 0 a 100%
+        
+        document.getElementById("saida").innerHTML="ataque";
+        document.getElementById("saida").innerHTML=velAtq;
+        document.getElementById("saida").innerHTML=vida;
+        document.getElementById("saida").innerHTML=defesa;
+        return true;
+    }
+    </script>
+    
+    <p> 
+        <div>
+            <form method="POST" name="formulario" onsubmit="setarAtributos(formulario.inputFor.value,
+            formulario.inputDes.value,formulario.inputVit.value,formulario.inputDef.value,formulario.inputSor.value)""> 
+                <b> Vamos distribuir aqui seus pontos de atributos:</b>>. <br><br>
+                Distribua n pontos da forma que preferir entre os atributos <br>
+                Força :    <input type=text size=1 maxlength=30 id="inputFor" name="inputFor" value="1" required> <br>
+                Destr.: <input type=text size=1 maxlength=30 id="inputDes" name="inputDes" value="1" required>  <br>
+                Vitali.: <input type=text size=1 maxlength=30 id="inputVit" name="inputVit" value="1" required>  <br>
+                Defes.: <input type=text size=1 maxlength=30 id="inputDef" name="inputDef" value="1" required> <br>
+                Sorte : <input type=text size=1 maxlength=30 id="inputSor" name="inputSor" value="1" required> <br>
+                <input type=button id="botao" name="botao" value="Setar atributos" onclick="setarAtributos(formulario.inputFor.value,
+                formulario.inputDes.value,formulario.inputVit.value,formulario.inputDef.value,formulario.inputSor.value);">
+            </form> 
+        </div>
+        <div id="saida">
+            <b>Atributos finais:</b>
+        </div>
+    </p>

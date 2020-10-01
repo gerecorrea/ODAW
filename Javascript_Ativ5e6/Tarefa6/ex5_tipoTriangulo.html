@@ -1,0 +1,39 @@
+
+
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<!-- Ex5 exercício livre - tipoTriangulo. - Tarefa 6 -->
+ <script>
+tipoTriangulo = (lado1, lado2, lado3 ) =>{
+    if(lado1 <= 0 || lado2 <= 0 || lado3 <= 0)
+        alert ('Inválido');
+    else if (lado1 !== lado2 && lado1 !== lado3 && lado2 !== lado3){
+        alert ('Escaleno');
+    }
+    else if(lado1 === lado2 && lado1 === lado3){
+        alert('Equilátero');
+    }
+    else{//dois lados iguais
+        alert ('Isósceles');
+    }
+}
+</script>   
+    
+    <p> 
+        <div>
+            <form method="POST" name="formulario"> 
+                <b> Digite o tamanho dos três lados do triângulo <br>
+                Lado 1: <input type=text size=1 maxlength=30 id="lado1" name="lado1" value="1" required> <br>
+                Lado 2: <input type=text size=1 maxlength=30 id="lado2" name="lado2" value="1" required>  <br>
+                Lado 3: <input type=text size=1 maxlength=30 id="lado3" name="lado3" value="1" required>  <br>
+                <input type=button id="botao" name="botao" value="Setar atributos" onclick="tipoTriangulo(formulario.lado1.value,
+                formulario.lado2.value,formulario.lado3.value)">
+            </form> 
+        
+        </div>
+    </p>

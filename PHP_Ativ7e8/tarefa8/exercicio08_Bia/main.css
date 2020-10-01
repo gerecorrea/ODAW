@@ -1,0 +1,191 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #008B8B;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  box-sizing: border-box;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 500px;
+  background: #00CED1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #008B8B;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+video{
+  text-align: center;
+  width: 426px;
+  height: 240px;
+}
+
+embed{
+  width: 426px;
+  height:240px;
+}
+
+.navform{
+  float: left;
+  width: 30%;
+  height: 1500px;
+  background: #00CED1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.navsite{
+  float: left;
+  width: 30%;
+  height: 400px;
+  background: #00CED1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.nav45{
+  float: left;
+  width: 30%;
+  height: 700px;
+  background: #00CED1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.articleform{
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #fff;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.articlesite{
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.article45{
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 700px;
+  box-sizing: border-box;
+}
+
+fieldset{
+    width: 90%;
+}
+
+textarea{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], select{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 90%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+
+}
+
+input[type=reset]{
+    width: 90%;
+    background-color: #FFA500;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+
+}
+
+button{
+  width: 90%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+}
+
+.error {
+  color: #FF0000;
+}

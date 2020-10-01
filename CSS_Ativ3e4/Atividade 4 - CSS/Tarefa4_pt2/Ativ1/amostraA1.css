@@ -1,0 +1,78 @@
+
+h1 {
+    font-family: Arial;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #B27A00;
+    background: #020202;
+    text-align: center;
+    padding: 12pt;
+    border-top: solid;
+    border-bottom: solid;
+    position: relative;
+    display:block;
+}
+h3{
+    font-family: sans-serif;
+    font-size: large;
+    color: #B07233;
+    font-style: bold;
+    text-align: center;
+}
+hr{
+    text-align: center;
+    border-bottom: solid;
+    border-top: solid;
+    display:block;
+    color: #B27A00;
+}
+body {
+    background: #000000;
+}
+A {
+    font-family: Arial;
+    font-weight: bold;
+    color: #0000FF;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+}
+A:LINK {
+    font-family: Arial;
+    font-weight: bold;
+    color: #0000FF;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+}
+A:VISITED {
+    font-family: Arial;
+    font-weight: bold;
+    color: #B27033;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+}
+B {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #B27722;
+    position: center;
+    font-size: 18px;
+}
+I {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+}
+P {
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: #B27033;
+    position: center;
+    text-align: center;
+    padding: 10pt;
+    border-left: solid;
+    border-right: solid;
+}

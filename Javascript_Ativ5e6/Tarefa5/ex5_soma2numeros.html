@@ -1,0 +1,26 @@
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<script>
+    soma = (a,b) => parseInt(a)+parseInt(b);
+    //Como recebo duas strings, preciso convertê-las para inteiro para então realizar a soma.
+    //Aqui fiz por arrow function, por ser mais direta e para teste com algo diferente.
+</script>
+
+<!-- Documento do formulario, 2 caixas de texto e o botão que aciona a função e, portanto, retorna a soma dos dois valores.-->
+<p> 
+  <form method="POST" name="formulario"> 
+        Valor 1
+        <input type=text size=3 maxlength=10 name="input" value=""> 
+        <br>
+        Valor 2
+        <input type=text size=3 maxlength=10 name="input2" value=""> 
+</p>
+<p>  
+    <input type=button name="botao" value="Soma" onclick="alert ('A soma dos dois é: ' +soma(formulario.input.value, formulario.input2.value))"> 
+</p> 
+ </form> 

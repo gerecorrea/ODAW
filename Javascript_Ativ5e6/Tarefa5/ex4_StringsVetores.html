@@ -1,0 +1,55 @@
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<script>
+    /*Crie um novo exemplo de uso de Javascript com manipulação de Strings ou Vetores. */
+    function printAlunos(){
+
+        const pilotos = ['Vettel','Alonso', 'Raikkonen','Massa',
+        'Hulkemberg', 'Schumacher','Bottas','Hamilton','Senna',
+        'Prost','Barrichello','Grosjean'];
+
+        pilotos.pop(); //retira o ultimo do array
+        pilotos.push('Verstappen');//adiciona na ultima posição
+
+        pilotos.sort();//ordena os pilotos por crescente
+
+        document.write("<br> <b> Primeiro print, removendo com pop() e inserindo com push(), ordenando todos com o sort(): </b> <br>");
+        for (let i in pilotos){
+            document.write(pilotos[i] +"<br>");
+        }
+
+        pilotos.shift(); //retira da primeira posição do array
+
+        pilotos.unshift('Relampago McQueen');//insere na primeira posição
+
+        document.write("<br> <b> Após remover o da primeira posição com shift() e inserir nela o Relâmpago McQueen com unshift(): </b> <br>");
+        for (let i in pilotos){
+            document.write(pilotos[i] +"<br>");
+        }
+
+        pilotos.splice(6, 0, 'Nelson Piquet', 'Niki Lauda'); //no índice 6, removo 0, insiro Piquet e Lauda
+
+        document.write("<br> <b> Agora insiro Piquet e Lauda a partir do índice 6 com splice(): </b> <br>");
+        for (let i in pilotos){
+            document.write(pilotos[i] +"<br>");
+        }
+
+        const algunsPilotos = pilotos.slice(3,7); //cria um array que pega a partir de certo índice e até o ultimo - 1
+
+        document.write("<br> <b> Agora pegando um novo objeto somente do quarto piloto até o sétimo piloto com slice() (posição 3 a 6): </b> <br>");
+        for (let i in algunsPilotos){
+            document.write(algunsPilotos[i] +"<br>");
+        }
+
+
+    }
+</script>
+
+<p>
+    <script>printAlunos()</script>
+</p>

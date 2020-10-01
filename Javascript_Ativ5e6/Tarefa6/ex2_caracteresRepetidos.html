@@ -1,0 +1,39 @@
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<!-- Ex2 string sem caracteres repetidos. - Tarefa 6 -->
+<!-- Obs: sei que devem ter comandos próprios para tal, inclusive já aprendi map e reduce e sei que de alguma formas eles também devem chegar n oresultado
+Porém achei mais fácil chegar assim, é uma lógica simples, até por não ter sido passado nada de como fazer. -->
+<script>
+
+    arrumarString = (string) => {
+        let array = [];
+        let newString = "";
+        let existe = false;
+        for(let i=0; i<string.length; i++){
+            for(let j=0; j<array.length; j++){
+                if(string[i] == array[j]){
+                    existe = true;
+                    break
+                }
+            }
+            if(existe == false){
+                array.push(string[i]);
+            }
+            existe = false;
+        }
+        alert("String sem repetições: " +array);
+    }
+    </script>
+    
+    <p> 
+        <form method="POST" name="formulario"> 
+           Digite uma string, vamos tirar seus caracteres repetidos. <br><br>
+           <input type=text size=30 maxlength=30 id="input" name="inputText" value="" required> 
+            <input type=button id="botao" name="botao" value="Enviar número" onclick="arrumarString(formulario.inputText.value)">
+       </form> 
+    </p>

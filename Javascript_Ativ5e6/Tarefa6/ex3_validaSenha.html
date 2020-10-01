@@ -1,0 +1,34 @@
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<!-- Ex3 valida senha. - Tarefa 6 -->
+<!-- talvez tbm tenha algum processo mais simples-->
+<!-- Restrições: 6 >= password <= 20 e ter dígitos-->
+    
+<script>
+validaSenha = (string) => {
+    let isDigit = false;
+    for(let i=0; string.length; i++){
+        if(string[i] >= '0' && string[i] <= '9'){
+            isDigit = true;
+            break;
+        }
+    }
+    if(string.length >= 6 && isDigit && string.length <= 20)
+        alert("Senha válida!");
+    else
+        alert("Senha inválida");
+}
+</script>
+
+<p> 
+    <form method="POST" name="formulario"> 
+        Digite uma senha, vamos ver se ela é válida. <br><br>
+        <input type=text size=30 maxlength=30 id="input" name="inputText" value="" required> 
+        <input type=button id="botao" name="botao" value="Enviar número" onclick="validaSenha(formulario.inputText.value)">
+    </form> 
+</p>

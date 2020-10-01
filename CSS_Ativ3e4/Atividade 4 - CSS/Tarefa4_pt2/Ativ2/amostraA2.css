@@ -1,0 +1,148 @@
+
+h1 {
+    font-family: Arial;
+    font-size: 28pt;
+    font-weight: bold;
+    color: #FF5555;
+    background: #020202;
+    text-align: center;
+    padding: 12pt;
+    position: relative;
+    display:block;
+}
+h6{
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #710000;
+    background: #020202;
+    text-align: center;
+    padding: 12pt;
+    position: relative;
+    display:block;
+
+}
+ol{
+    border-bottom: ridge;
+    border-top: ridge;
+    position: relative;
+    color: #710000;
+    padding: 14pt;
+    text-decoration: bold;
+    text-indent: 10px;
+    letter-spacing: 4px;   
+    line-height: 1.5;
+    text-shadow: aqua;
+    text-rendering: auto;
+}
+h3{
+    font-family: sans-serif;
+    font-size: large;
+    color: #710000;
+    font-style: bold;
+    text-align: center;
+}
+hr{
+    text-align: center;
+    border-bottom: solid;
+    border-top: solid;
+    display:block;
+    color: #710000;
+}
+ul{
+    padding: 15pt;
+    text-align: center;
+    border-bottom: solid;
+    border-top: solid;
+    display:block;
+    line-height: 1.5;
+    letter-spacing: 2.5px; 
+    color: #710000;
+}
+fieldset{
+    border-bottom: solid;
+    border-top: solid;
+    display:block;
+    text-align: left;
+    color: #FF5555;
+    letter-spacing: 6px;   
+    line-height: 1.3;
+}
+table{
+    padding: 15pt;
+    text-align: center;
+    border-bottom: solid;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    display:block;
+    line-height: 1.5;
+    letter-spacing: 2.5px; 
+    color: #FF3333;
+    background: black;
+    border: 5px solid #FF3333;
+    border-collapse: collapse;
+    border-radius: 4ch;
+    border-style: double; 
+}
+textarea{
+    padding: 10pt;
+    display: grid;
+    align-self: start;
+    cursor: inherit;
+    color: #FF3333;
+    min-height: 100px;
+    min-width: 1240px;
+    resize: horizontal;
+    scroll-behavior: smooth;
+}
+body {
+    background: #000000;
+}
+A {
+    font-family: Arial;
+    font-weight: bold;
+    color: #0000FF;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+}
+A:LINK {
+    font-family: Arial;
+    font-weight: bold;
+    color: #0000FF;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+}
+A:VISITED {
+    font-family: Arial;
+    font-weight: bold;
+    color: #B27033;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+}
+B {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #710000;
+    position: center;
+    font-size: 18px;
+}
+I {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+}
+P {
+    font-family: sans-serif;
+    font-size: 16pt;
+    color: #711111;
+    position: center;
+    text-align: center;
+    padding: 10pt;
+    border-left: solid;
+    border-right: solid;
+}

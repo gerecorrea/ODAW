@@ -1,0 +1,40 @@
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<!-- Ex1 acerte o numero - Tarefa 6 -->
+<script>
+var valorAlvo = Math.floor(Math.random() * 10+1); //gera valor entre 1 e 10
+//document.write(valorAlvo);
+
+acerteNumero = () => {
+    if(document.getElementById('botao').value == "Enviar número"){
+        //get element by id aqui:
+        //https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript
+        //Tbm On click js aqui: https://www.w3schools.com/jsref/event_onclick.asp 
+        let numero = document.getElementById('input').value// to get the value of desired box in html
+        if(numero == valorAlvo){ //se botar estritamente igual dá erro!
+            alert("Parabéns, você acertou!");
+            return true;
+        }
+        else if(numero > valorAlvo){
+            alert("O número que queremos é menor!");
+        }
+        else{
+            alert("O número que queremos é maior!");
+        }
+        document.getElementById('input').focus();
+    }
+}
+</script>
+
+<p> 
+    <form method="POST" name="formulario"> 
+       Digite um número entre 1 a 10. Vamos ver se você acerta. <br><br>
+       <input type=text size=30 maxlength=30 id="input" onfocus="select()" value="" required> 
+        <input type=button id="botao" name="botao" value="Enviar número" onclick="acerteNumero()">
+   </form> 
+</p>

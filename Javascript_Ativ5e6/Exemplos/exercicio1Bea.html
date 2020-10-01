@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Questão 1</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    <h2>Questão 1</h2>
+  </header>
+
+  <section>
+    <nav class="navsite">
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="formulario1.html">Cadastrar</a></li>
+        <li><a href="exercicio1.html">Questão 1</a></li>
+        <li><a href="exercicio2.html">Questão 2</a></li>
+        <li><a href="exercicio4.html">Questão 4</a></li>
+        <li><a href="exercicio5.html">Questão 5</a></li>
+      </ul>
+    </nav>
+
+    <article class="articlesite">
+      <h1>Acerte o número</h1>
+      <p>1. Número entre 0 e 20;</p>
+      <p>2. Você tem 5 tentativas;</p>
+
+      <form>
+        <section>
+          <script type="text/javascript">
+            var x = Math.floor(Math.random()*(20+1));
+            var n = 0;
+
+            function jogo(){
+              if(document.getElementById('guessb').value == "Adivinhar"){
+                var y = document.getElementById('guesst').value;
+                n = n + 1;
+                if(x > y && n <= 5){
+                  document.getElementById('tentativa').innerHTML = "Número de tentativas = "+n;
+                  alert("Seu valor é muito baixo");
+                }
+                if(x < y && n <= 5){
+                  document.getElementById('tentativa').innerHTML = "Número de tentativas = "+n;
+                  alert("Seu valor é muito alto");
+                }
+                if(x == y && n <= 5){
+                  document.getElementById('tentativa').innerHTML = "Número de tentativas = "+n;
+                  alert("Parabéns! Você acertou! :)");
+                  return true;
+                }
+                if(n == 5){
+                  alert("Acabaram suas tentativas :/");
+                  return false;
+                }
+
+                document.getElementById('guesst').focus();
+              }
+
+            }
+
+          </script>
+
+          <label for="valor">Informe o valor</label><br>
+          <input type = "text" id = "guesst" onfocus="select()" placeholder = "Digite o valor aqui" required><br>
+          <input class = "botaoAdivinhar" id = "guessb" type = "button" value = "Adivinhar" onclick="jogo()">
+          <p id = "tentativa"></p>
+          
+        </section><br>
+      </form>
+    </article>
+  </section>
+
+  <footer>
+    <p>Contato: beatrizreichert99@gmail.com</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<!-- Para inserir tabelas do JS em HTML existem funções próprias, que são bem úteis
+    No link abaixo explica bem bonitinho como fazer para o caso de tabelas: https://www.valentinog.com/blog/html-table/
+    Não usei isso porque já havia feito o ex sem saber da existência, fiz meio gambiarra, mas foi funcional e baseado no que foi ensinado.
+-->
+
+<script>
+    //Aqui exibo direto na página web.
+    function calcula() {
+        let N = []
+        let quad = []
+        let cubo = []
+        let fat = []
+        document.write("<b> Eu amo a Gabriela Rebello </b>");
+        for(let i=0;i<=10;i++){
+            let res = 1;
+            N.push(i);
+            quad.push(i*i);
+            cubo.push(i*i*i);
+            for(let j=i; j>1; j--){
+                res *= j;
+            }
+            fat.push(res);
+        }
+        //para tab de tam 4: &emsp;
+        document.write("<table border bgcolor = #B27A00> <br>");
+        document.write("<tr> <th> N </th> <th> ^2 </th> <th> ^3 </th> <th> fat </th> </tr>");
+
+        //Ou (mais feio e sem tabela e não identado):
+        //document.write("N \t ^2 \t ^3 \t fat<br>");
+        for(let i=0;i<=10;i++){
+            document.write("<tr> <th>" +N[i] +"</th> <th>" +quad[i] +"</th> <th>" +cubo[i] +"</th> <th>" +fat[i] +"</th> </tr>");
+            
+            //Ou (mais feio, sem tabela e não identado):
+            //document.write(N[i] +'\t' +quad[i] +'\t' +cubo[i] +'\t' +fat[i] +"<br>");
+        }
+    }
+
+    //Obs: Sempre que quiser escrever na página, como farei aqui. Escreve com função write() no script
+    //Ela vem do objeto "document" porque essa é o escopo global padrão da página web
+    //No html então chamo a função dentro da tag script.
+
+</script>
+
+
+<p >
+    <script>calcula();</script>
+</p>
+
+
+
+

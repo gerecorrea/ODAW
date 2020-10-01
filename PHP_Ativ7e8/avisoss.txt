@@ -1,0 +1,24 @@
+Conta MySQL login (Apache instalado):
+domínio pc: 127.0.0.1
+senha:mtw25gk3 (do root tbm)
+Criei um webserver pro php com o apache, por isso aquele "nautilus"
+Qualquer dúvida ver aqui, bem explicado: https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04 
+	Para ver como executar o PHP com o LAMP que instalei ver nesse link: https://askubuntu.com/questions/271935/how-to-compile-php-in-after-installing-php-apache-and-mysql-severs/271987#271987
+
+Web:
+	Acesso via "/var/www" na url do browser 
+	Ainda sim não tá deixando acessar os .php lá de dentro, ele baixa o aruqivo :/
+
+Execução online:
+	O melhor é o repl.it. Se abrir o php como web server aceita execução de banco
+	Ex exemplo meu: https://repl.it/@gerecorrea/T8-Ex1#index.php 
+
+	Um bom (além do conteúdo) é pelo w3schools, que gera como se fosse web, link aqui:
+	https://www.w3schools.com/php/phptryit.asp?filename=tryphp_intro 
+
+	Outras opções também interessantes para verificação são:
+	https://sandbox.onlinephpfunctions.com/ 
+	http://www.writephponline.com/ 
+
+	Não acredito que nenhum deste tenham suporte para banco de dados, por isso arrumar no pc é ideal.
+

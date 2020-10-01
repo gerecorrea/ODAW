@@ -1,0 +1,64 @@
+1<meta charset="utf-8">
+<html>
+    <head>
+        <title> Sistema de Cadastramento IMDb</title>
+        
+        <!-- Stylesheet CSS do arquivo que nós mesmos editamos:-->
+        <link rel="stylesheet" type="text/css" href="amostraA3.css"> 
+        
+        <!--Framework Bootstrap para Javascript:
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        -->
+        
+        <!-- Framework Bootstrap para CSS:
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        -->
+    </head>
+
+    <!--<body background = "spmUM.gif">-->
+    <body>
+        <h3 class="large">Sistema de Cadastramento IMDb</h3> 
+        <!-- bgcolor = "090807""..."  -->
+            <br></br>
+            <fieldset>
+            <section> <h2>CADASTRO </h2></section>
+                <br></br>
+                <form>
+                    <fieldset class="alt">
+                        <label for="E-mail">E-mail</label>
+                        <input type="email" color="red" id="e-mail" placeholder="Seu e-mail..." required>
+                        <br></br>
+                        <label for="Senha">Senha</label>
+                        <input type="password" color="red" id="password" placeholder="Sua senha..." required>
+                        <br></br>
+                        <p> Selecione sua data de nascimento </p>
+                        <input type="date" value="Data de nascimento" name="Aniversário">
+                        <br></br>
+                        <!--<form>
+                            <p>Estime quantos filmes você já viu (únicos)</p>
+                            <input id="filmes" type="range" min="0" max="5000" value = "100" placeholder = "Quantidade de filmes (opcional)..." onchange="mostrarIdade(this.value)"/>
+                        </form>-->
+                        <label for="Filme preferido">Filme Preferido</label>
+                        <input type="text" color="red" id="filme" placeholder="Seu filme preferido (opcional)..." >
+                    </fieldset>
+                    <br></br>
+                    <fieldset class="alt">
+                        <p>Ouça o que o Chewbacca tem para falar antes de você dar submit</p>
+                        <audio src="Chewbacca.mp3" controls="true" autoplay="true"></audio>
+                    </fieldset>
+                    <br></br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            </fieldset>
+            <nav>
+                <br></br>
+                <a href="https://www.w3schools.com/html/">Clique aqui para saber mais sobre HTML</a>
+                <br></br>
+                <a href="https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F">Clique aqui para 
+                    fazer o cadastro pelo verdadeiro site do IMDb</a>
+                <!--https://www.imdb.com/registration/signin?ref=nv_generic_lgin&u=%2F-->
+                <bold><h6>Página criada por Geremias Corrêa</h6></bold>
+            </nav>
+    </body>
+</html>

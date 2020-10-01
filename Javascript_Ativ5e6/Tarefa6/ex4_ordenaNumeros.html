@@ -1,0 +1,26 @@
+<!--
+    Autor: Geremias Correa
+    Disciplina: ODAW
+    Professora: Debora Cabral
+    Semestre: 2020/1
+-->
+
+<!-- Ex4 ordena numeros. - Tarefa 6 -->
+    
+<script>
+    ordenaNumeros = (string) => {
+        let array = [];
+        array = string.split(",");
+        array.sort();
+        alert("Ordem crescente: " +array);
+                //Obs: tentei fazer conversor para inteiro e float com .map(Number) e parseInt e parseFloat, mas continuo dando problemas, por isso restringi a operação.
+    }
+    </script>
+    
+    <p> 
+        <form method="POST" name="formulario"> 
+            Digite uma sequência de números inteiros de 0 a 9 separados por vírgula. <br><br>
+            <input type=text size=30 maxlength=30 id="input" name="inputText" value="" required> 
+            <input type=button id="botao" name="botao" value="Enviar números" onclick="ordenaNumeros(formulario.inputText.value)">
+        </form> 
+    </p>
